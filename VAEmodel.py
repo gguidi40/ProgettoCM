@@ -6,31 +6,41 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, DataLoader
 import h5py
+import torch.nn.functional as F
 
 
 
 # To get the images and labels from file
-with h5py.File(r"C:\Users\Utente\Documents\Università\Python\ProgettoCM\Datagalassie\Galaxy10.h5", 'r') as F:
-    images = np.array(F['images'])
-    labels = np.array(F['ans'])
+with h5py.File(r"C:\Users\nicol\Desktop\Universita\ProgettoCM\Galaxy10_DECals.h5", 'r') as F_h5:
+    images = np.array(F_h5['images'])
+    labels = np.array(F_h5['ans'])
 
-#To convert the labels to categorical 10 classes
-labels = torch.tensor(labels)   # valori: 0, 1, 2
+print("Elaborazione immagini in corso...")
 
 
-#To convert to desirable type
-labels = labels.type(torch.float32)
-images = images.astype(np.float64)/255.0  # normalize to [0, 1]
+images = torch.tensor(images, dtype=torch.float32) / 255.0 
+labels = torch.tensor(labels, dtype=torch.float32)
+
+# Pytorch vuole il formato (N, 3, H, W) ma noi lo diamo così (N, H, W, 3)
+if images.shape[-1] == 3:
+    images = images.permute(0, 3, 1, 2)
+    channels = 3
 
 train_idx, test_idx = train_test_split(np.arange(labels.shape[0]), test_size=0.1)
 X_train, Y_train, X_test, Y_test = images[train_idx], labels[train_idx], images[test_idx], labels[test_idx]
-target_classes = [4]
+
+#  Selecting the right galaxy classes
+
+target_classes = [2, 6, 9]
+
 mask = np.isin(Y_train, target_classes)
 X_train = X_train[mask]
 Y_train = Y_train[mask]
 mask = np.isin(Y_test, target_classes)
 X_test = X_test[mask]
 Y_test = Y_test[mask]
+
+
 def plot_random_samples(x_data, y_data, num_samples=9):
     # 1. Seleziona indici casuali (per non vedere sempre le stesse prime immagini)
     indices = np.random.choice(len(x_data), num_samples, replace=False)
@@ -44,14 +54,16 @@ def plot_random_samples(x_data, y_data, num_samples=9):
         # Prende l'immagine e l'etichetta
         img = x_data[idx]
         label = y_data[idx]
+
+        img_to_show = img.permute(1, 2, 0)
         
         # 2. Gestione visualizzazione:
         # Se l'immagine ha shape (69, 69, 1) o (1, 69, 69), usiamo squeeze() per togliere la dimensione 1
-        img_to_show = np.squeeze(img)
+        img_to_show = np.squeeze(img_to_show)
         
         # Mostra l'immagine
         # Usa cmap='gray' se sono in bianco e nero, toglilo se sono a colori
-        plt.imshow(img_to_show, cmap='gray') 
+        plt.imshow(img_to_show) 
         
         # 3. Metti l'etichetta come titolo: QUI devi vedere solo 2, 6 o 9
         plt.title(f"Label: {label}")
@@ -59,7 +71,7 @@ def plot_random_samples(x_data, y_data, num_samples=9):
     
     plt.tight_layout()
     plt.show()
-plot_random_samples(X_train, Y_train)
+#plot_random_samples(X_train, Y_train)
 
 X_train = torch.tensor(X_train, dtype=torch.float32).unsqueeze(3)  # add channel dim
 X_test  = torch.tensor(X_test, dtype=torch.float32).unsqueeze(3)
