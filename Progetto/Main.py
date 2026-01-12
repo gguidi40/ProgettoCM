@@ -18,6 +18,7 @@ from Log import Logger
 from Shape import ShapeDataset
 from Modello import ConvVAE
 from Train import Trainer
+from Plot import dual_plot
 
 
 ## 1. Scrittura della shell su file txt
@@ -25,7 +26,7 @@ from Train import Trainer
 cartella_attuale = r"C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM"
 percorso_log = os.path.join(cartella_attuale, "grid_search_convvae.txt") # Unisce il percorso cartella attuale con il file txt
 
-sys.stdout = Logger()
+sys.stdout = Logger(cartella_attuale, percorso_log)
 
 print("\n" + "="*30)
 print(f"Logger attivato correttamente")
@@ -72,12 +73,12 @@ X_train, X_val, Y_train, Y_val = train_test_split(
 # Definzione dei parametri
 
 param_grid = {                     # Dizionario dei parametri
-    'batch_size': [32, 64],
-    'learning_rate': [1e-3, 5e-4, 1e-4],
-    'base_channels': [16, 32],
-    'latent_dim': [128, 256, 512],
-    'num_layers': [3, 4, 5],
-    'beta': [0.01, 0.001]
+    'batch_size': [32],
+    'learning_rate': [1e-3],
+    'base_channels': [16],
+    'latent_dim': [64],
+    'num_layers': [3],
+    'beta': [0.05]
 }
 
 keys = param_grid.keys() # Estraiamo i nomi dei parametri e li mettiamo in una lista
@@ -96,8 +97,18 @@ for combo in combinations:
     config = dict(zip(keys, combo))
 
     try:  # Utilizziamo try ed except per non fermare il ciclo in caso di errori
-        val_loss = trainer.train_evaluate_model(config, epochs=15, X_train, Y_train, X_val, Y_val, device)
+        val_loss, ssim_list, KLD_list = trainer.train_evaluate_model(
+            config, 
+            epochs=15, 
+            X_train=X_train, 
+            Y_train=Y_train, 
+            X_val=X_val, 
+            Y_val=Y_val,
+            device=device
+        )
 
+        plot = dual_plot()
+        plot.plot(ssim_list, KLD_list)
         results.append((config, val_loss))
 
         if val_loss < global_best_loss:
@@ -205,13 +216,44 @@ for _ in range(0, num_totale_immagini, batch_size_gen):
 
 # Calcolo finale FID
 fid_generazione = fid_metric.compute().item()
-print(f"FID (Generazione Pura): {fid_generazione:.2f}")
 
 print("\n=== RISULTATI TEST ===")
 print(f"Configurazione usata: {best_config}")
-print(f"SSIM Finale: {final_ssim_score:.4f} (più vicino a 1 = migliore)")
-print(f"FID Finale:  {fid_generazione:.2f} (più basso = migliore)")
+print(f"SSIM Finale: {final_ssim_score:.4f}")
+print(f"FID Finale:  {fid_generazione:.2f}")
 print("======================\n")
+
+
+## Generazione di immagini
+
+def visualizza_galassie_fake(immagini, n=16):
+
+    fig, axes = plt.subplots(4, 4, figsize=(10, 10))
+    fig.suptitle("Galassie generate artificialmente", fontsize=16)
+
+    for i, ax in enumerate(axes.flat):
+        # Portiamo su CPU per sicurezza
+        img = immagini[i].cpu().permute(1, 2, 0).numpy()
+
+        # Se sono uint8 (0-255), le mostriamo così come sono
+        # Se fossero float (0-1), imshow capirebbe lo stesso
+        ax.imshow(img)
+        ax.axis('off')
+
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    plt.show()
+
+
+
+num_dim_latenti = best_config['latent_dim']
+
+galassie_sintetiche = genera_per_fid(
+    model=final_model,
+    latent_dim=num_dim_latenti,
+     num_immagini=16,
+    device=device)
+
+visualizza_galassie_fake(galassie_sintetiche)
 
 
 ## 9. Confronto tra immagini random
@@ -251,3 +293,48 @@ def visualizza_confronto(model, test_loader):
         plt.show()
 
 visualizza_confronto(final_model, test_loader)
+
+
+## Metamorfosi delle galassie
+
+def visualizza_metamorfosi_classi(model, X_data, Y_data, classe_A=0, classe_B=1, steps=10):
+    model.eval()
+
+    # Troviamo gli indici
+    indici_A = (Y_data == classe_A).nonzero(as_tuple=True)[0]
+    indici_B = (Y_data == classe_B).nonzero(as_tuple=True)[0]
+
+    # --- CONTROLLO DI SICUREZZA ---
+    if len(indici_A) == 0 or len(indici_B) == 0:
+        classi_disponibili = torch.unique(Y_data).tolist()
+        print(f"ERRORE: Una delle classi ({classe_A} o {classe_B}) non è presente nel Test Set.")
+        print(f"Classi effettivamente presenti in Y_test: {classi_disponibili}")
+        return # Esce dalla funzione senza crashare
+    # ------------------------------
+
+    # Indice random
+    idx_A = indici_A[random.randint(0, len(indici_A) - 1)]
+    idx_B = indici_B[random.randint(0, len(indici_B) - 1)]
+
+    # Estraiamo le immagini
+    img_start = X_data[idx_A].unsqueeze(0).to(device)
+    img_end = X_data[idx_B].unsqueeze(0).to(device)
+
+    with torch.no_grad():
+        mu_start, _ = model.encode(img_start)
+        mu_end, _ = model.encode(img_end)
+
+        alphas = torch.linspace(0, 1, steps).to(device)
+        z_interp = torch.cat([(1 - a) * mu_start + a * mu_end for a in alphas])
+        immagini_generate = model.decode(z_interp).cpu()
+
+    # Visualizzazione
+    fig, axes = plt.subplots(1, steps, figsize=(20, 4))
+    fig.suptitle(f"Metamorfosi: Classe {classe_A} ➔ Classe {classe_B}", fontsize=16)
+    for i in range(steps):
+        img = immagini_generate[i].permute(1, 2, 0).numpy()
+        axes[i].imshow(img.clip(0, 1))
+        axes[i].axis('off')
+    plt.show()
+
+visualizza_metamorfosi_classi(final_model, X_test, Y_test, classe_A=2, classe_B=9)

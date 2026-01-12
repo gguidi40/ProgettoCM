@@ -36,6 +36,8 @@ class Trainer:
         cartella_attuale = r"C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM"
 
         # Ciclo di training
+        ssim_list = []
+        KLD_list = []
         for epoch in range(epochs):
             model.train()
             tr_loss = 0
@@ -46,11 +48,14 @@ class Trainer:
                 
                 optimizer.zero_grad()              # Elimina i gradienti dell'errore precedente
                 recon, mu, logvar = model(X_batch) # L'immagine passa attraverso il modello
-                batch_loss = loss_calc.vae_loss_ssim(recon, X_batch, mu, logvar, beta=current_beta) # Calcola la loss usando l'istanza loss_calc
+                batch_loss, loss_ssim, KLD = loss_calc.vae_loss_ssim(recon, X_batch, mu, logvar, beta=current_beta) # Calcola la loss usando l'istanza loss_calc
+                ssim_list.append(loss_ssim)
+                KLD_list.append(KLD)
                 batch_loss.backward()
                 optimizer.step()
-                
                 tr_loss += batch_loss.item()
+
+
 
             # Validation
             model.eval()
@@ -74,4 +79,4 @@ class Trainer:
 
             print(f"Ep {epoch+1}/{epochs} | Val Loss: {avg_val_loss:.4f}")
 
-        return best_val_loss
+        return best_val_loss, ssim_list, KLD_list

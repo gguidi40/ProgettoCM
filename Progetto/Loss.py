@@ -21,4 +21,4 @@ class LossCalculator:
         # Calcolo KLD
         KLD = -0.5 * torch.mean(1 + logvar - mu.pow(2) - logvar.exp()) # La KLD misura la distanza tra la distribuzione generata e quella a media 0 e varianza 1
         
-        return loss_ssim + beta * KLD
+        return loss_ssim + beta * KLD, loss_ssim, KLD
