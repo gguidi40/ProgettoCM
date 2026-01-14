@@ -41,7 +41,7 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 
 ## Struttura del Progetto
 
-
+```text
 
 ├── data/                   # Dataset delle immagini di galassie
 ├── Project/               # codice del progetto
