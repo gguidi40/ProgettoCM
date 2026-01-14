@@ -1,0 +1,607 @@
+
+==============================
+Logger attivato correttamente
+Il file si trova qui: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\grid_search_convvae.txt
+==============================
+
+Utilizzo device: cuda
+Inizio Grid Search su 32 combinazioni
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.85 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.75 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.73 | Val Loss: 0.69 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.64 | Val Loss: 0.61 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+FID Finale:  194.17
+--> Nuova configurazione migliore! Salvata in: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\pesi_finali.pth
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.82 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.76 | Val Loss: 0.74 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.73 | Val Loss: 0.70 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.67 | Val Loss: 0.63 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.62 | Val Loss: 0.60 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  207.54
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.82 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.70 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.68 | Val Loss: 0.65 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.63 | Val Loss: 0.60 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+FID Finale:  191.62
+--> Nuova configurazione migliore! Salvata in: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\pesi_finali.pth
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.80 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.72 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.71 | Val Loss: 0.67 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.64 | Val Loss: 0.61 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.60 | Val Loss: 0.58 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.07500
+FID Finale:  196.17
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.79 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.70 | Val Loss: 0.66 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.65 | Val Loss: 0.62 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+FID Finale:  190.78
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.82 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.73 | Val Loss: 0.69 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.66 | Val Loss: 0.64 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.63 | Val Loss: 0.61 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  188.53
+--> Nuova configurazione migliore! Salvata in: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\pesi_finali.pth
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.79 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.71 | Val Loss: 0.67 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.65 | Val Loss: 0.63 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.60 | Beta attuale: 0.10000
+FID Finale:  192.02
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.80 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.71 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.68 | Val Loss: 0.64 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+FID Finale:  182.88
+--> Nuova configurazione migliore! Salvata in: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\pesi_finali.pth
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.82 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.72 | Val Loss: 0.68 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.67 | Val Loss: 0.64 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.65 | Val Loss: 0.62 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+FID Finale:  188.71
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.81 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.70 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.69 | Val Loss: 0.66 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.65 | Val Loss: 0.62 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.60 | Val Loss: 0.58 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  189.42
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.82 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.73 | Val Loss: 0.71 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.64 | Val Loss: 0.64 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.63 | Val Loss: 0.61 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+FID Finale:  158.53
+--> Nuova configurazione migliore! Salvata in: C:\Users\franc\OneDrive\Desktop\Università\CM\ProgettoCM\pesi_finali.pth
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.81 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.72 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.69 | Val Loss: 0.64 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.62 | Val Loss: 0.59 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.07500
+FID Finale:  207.14
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.79 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.72 | Val Loss: 0.67 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.66 | Val Loss: 0.62 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.63 | Val Loss: 0.63 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.61 | Val Loss: 0.59 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.57 | Beta attuale: 0.15000
+FID Finale:  188.96
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.80 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.72 | Val Loss: 0.68 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.65 | Val Loss: 0.63 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.59 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  198.23
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.79 | Val Loss: 0.74 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.70 | Val Loss: 0.65 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.64 | Val Loss: 0.62 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+FID Finale:  193.60
+Training con configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 26.48 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.73 | Val Loss: 0.68 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.66 | Val Loss: 0.64 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.59 | Val Loss: 0.60 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+FID Finale:  181.69
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.86 | Val Loss: 0.78 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.79 | Val Loss: 0.77 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.77 | Val Loss: 0.76 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.76 | Val Loss: 0.75 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.75 | Val Loss: 0.74 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.73 | Val Loss: 0.72 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.71 | Val Loss: 0.69 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.64 | Val Loss: 0.62 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.62 | Val Loss: 0.60 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+FID Finale:  206.03
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.86 | Val Loss: 0.79 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.79 | Val Loss: 0.77 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.77 | Val Loss: 0.76 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.76 | Val Loss: 0.75 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.75 | Val Loss: 0.74 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.73 | Val Loss: 0.71 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.70 | Val Loss: 0.68 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  237.54
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.84 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.75 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.74 | Val Loss: 0.73 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.72 | Val Loss: 0.69 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+FID Finale:  202.31
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 4, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.85 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.76 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.76 | Val Loss: 0.74 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.74 | Val Loss: 0.73 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.72 | Val Loss: 0.69 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.68 | Val Loss: 0.65 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.64 | Val Loss: 0.61 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+FID Finale:  227.04
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.82 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.76 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.75 | Val Loss: 0.74 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.74 | Val Loss: 0.73 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.71 | Val Loss: 0.69 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.68 | Val Loss: 0.68 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.66 | Val Loss: 0.67 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.65 | Val Loss: 0.63 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.63 | Val Loss: 0.63 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.15000
+FID Finale:  232.84
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.81 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.75 | Val Loss: 0.73 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.72 | Val Loss: 0.69 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.68 | Val Loss: 0.67 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.66 | Val Loss: 0.64 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.64 | Val Loss: 0.64 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.63 | Val Loss: 0.63 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.62 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.60 | Val Loss: 0.61 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.12500
+FID Finale:  247.25
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.80 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.75 | Val Loss: 0.73 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.71 | Val Loss: 0.69 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.66 | Val Loss: 0.65 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.63 | Val Loss: 0.63 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.63 | Val Loss: 0.61 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10000
+FID Finale:  227.94
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 32, 'num_layers': 5, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.81 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.71 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.69 | Val Loss: 0.66 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.65 | Val Loss: 0.65 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.07500
+FID Finale:  227.00
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.86 | Val Loss: 0.78 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.79 | Val Loss: 0.77 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.77 | Val Loss: 0.75 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.75 | Val Loss: 0.74 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.73 | Val Loss: 0.71 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.69 | Val Loss: 0.67 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.65 | Val Loss: 0.63 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.15000
+FID Finale:  202.34
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.85 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.75 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.74 | Val Loss: 0.73 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.72 | Val Loss: 0.69 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.65 | Val Loss: 0.63 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.12500
+FID Finale:  225.16
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.85 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.76 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.75 | Val Loss: 0.74 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.73 | Val Loss: 0.71 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.70 | Val Loss: 0.70 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.66 | Val Loss: 0.64 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.64 | Val Loss: 0.62 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.62 | Val Loss: 0.60 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.10000
+FID Finale:  200.46
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 0.85 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.76 | Val Loss: 0.74 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.74 | Val Loss: 0.72 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.71 | Val Loss: 0.69 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.63 | Val Loss: 0.61 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.61 | Val Loss: 0.59 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.59 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.58 | Val Loss: 0.58 | Beta attuale: 0.07500
+FID Finale:  253.24
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.15}
+0.15
+Ep 1, Tr loss: 0.81 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.75 | Val Loss: 0.73 | Beta attuale: 0.01509
+Ep 3, Tr loss: 0.71 | Val Loss: 0.68 | Beta attuale: 0.03008
+Ep 4, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.04507
+Ep 5, Tr loss: 0.65 | Val Loss: 0.64 | Beta attuale: 0.06006
+Ep 6, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.07505
+Ep 7, Tr loss: 0.63 | Val Loss: 0.63 | Beta attuale: 0.09004
+Ep 8, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.10503
+Ep 9, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.12002
+Ep 10, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.13501
+Ep 11, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.15000
+Ep 12, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.15000
+Ep 13, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.15000
+Ep 14, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.15000
+Ep 15, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.15000
+FID Finale:  241.36
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.125}
+0.125
+Ep 1, Tr loss: 0.83 | Val Loss: 0.77 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.77 | Val Loss: 0.75 | Beta attuale: 0.01259
+Ep 3, Tr loss: 0.75 | Val Loss: 0.73 | Beta attuale: 0.02508
+Ep 4, Tr loss: 0.71 | Val Loss: 0.71 | Beta attuale: 0.03757
+Ep 5, Tr loss: 0.68 | Val Loss: 0.66 | Beta attuale: 0.05006
+Ep 6, Tr loss: 0.65 | Val Loss: 0.64 | Beta attuale: 0.06255
+Ep 7, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.07504
+Ep 8, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.08753
+Ep 9, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.10002
+Ep 10, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.11251
+Ep 11, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.12500
+Ep 12, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.12500
+Ep 13, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 14, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.12500
+Ep 15, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.12500
+FID Finale:  238.19
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.1}
+0.1
+Ep 1, Tr loss: 0.81 | Val Loss: 0.75 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.74 | Val Loss: 0.73 | Beta attuale: 0.01009
+Ep 3, Tr loss: 0.71 | Val Loss: 0.68 | Beta attuale: 0.02008
+Ep 4, Tr loss: 0.67 | Val Loss: 0.65 | Beta attuale: 0.03007
+Ep 5, Tr loss: 0.65 | Val Loss: 0.64 | Beta attuale: 0.04006
+Ep 6, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.05005
+Ep 7, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.06004
+Ep 8, Tr loss: 0.62 | Val Loss: 0.61 | Beta attuale: 0.07003
+Ep 9, Tr loss: 0.61 | Val Loss: 0.61 | Beta attuale: 0.08002
+Ep 10, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.09001
+Ep 11, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.10000
+Ep 12, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.10000
+Ep 13, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 14, Tr loss: 0.60 | Val Loss: 0.59 | Beta attuale: 0.10000
+Ep 15, Tr loss: 0.59 | Val Loss: 0.59 | Beta attuale: 0.10000
+FID Finale:  220.72
+Training con configurazione: {'batch_size': 32, 'learning_rate': 5e-05, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 5, 'beta': 0.075}
+0.075
+Ep 1, Tr loss: 1.16 | Val Loss: 0.76 | Beta attuale: 0.00010
+Ep 2, Tr loss: 0.75 | Val Loss: 0.73 | Beta attuale: 0.00759
+Ep 3, Tr loss: 0.71 | Val Loss: 0.68 | Beta attuale: 0.01508
+Ep 4, Tr loss: 0.67 | Val Loss: 0.66 | Beta attuale: 0.02257
+Ep 5, Tr loss: 0.65 | Val Loss: 0.64 | Beta attuale: 0.03006
+Ep 6, Tr loss: 0.64 | Val Loss: 0.63 | Beta attuale: 0.03755
+Ep 7, Tr loss: 0.63 | Val Loss: 0.62 | Beta attuale: 0.04504
+Ep 8, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.05253
+Ep 9, Tr loss: 0.62 | Val Loss: 0.62 | Beta attuale: 0.06002
+Ep 10, Tr loss: 0.61 | Val Loss: 0.62 | Beta attuale: 0.06751
+Ep 11, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.07500
+Ep 12, Tr loss: 0.61 | Val Loss: 0.60 | Beta attuale: 0.07500
+Ep 13, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07500
+Ep 14, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07500
+Ep 15, Tr loss: 0.60 | Val Loss: 0.60 | Beta attuale: 0.07500
+FID Finale:  226.49
+
+========================================
+Grid Search Completata.
+Migliore Configurazione: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.1}
+Migliore Validation Loss: 446.10924726724625
+========================================
+
+==============================
+Inizio del test
+==============================
+Pesi caricati correttamente
+Calcolo metriche su 519 immagini
+
+=== RISULTATI TEST ===
+Configurazione usata: {'batch_size': 32, 'learning_rate': 0.0001, 'base_channels': 64, 'latent_dim': 48, 'num_layers': 4, 'beta': 0.1}
+SSIM Finale: 0.4217
+FID Finale:  157.80
+======================
