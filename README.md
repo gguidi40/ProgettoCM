@@ -32,10 +32,17 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 ##  Librerie Utilizzate
 
      
-- **PyTorch**
+- PyTorch
+- Torchvision
 - NumPy
 - Matplotlib
-
+-h5py
+-Scikit-Learn
+-Torchmetrics
+-os / sys
+-shutil
+-itertools
+-random
 
 ---
 
