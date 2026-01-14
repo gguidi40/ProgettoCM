@@ -35,7 +35,7 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 - **PyTorch**
 - NumPy
 - Matplotlib
-- torchvision
+
 
 ---
 
@@ -47,4 +47,5 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 ├── Project/               # codice del progetto
 ├── Plots/                 # Modelli salvati
 ├── Output_imagis/                # Output e immagini generate
+└── README.md
                
