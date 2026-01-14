@@ -36,13 +36,13 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 - Torchvision
 - NumPy
 - Matplotlib
--h5py
--Scikit-Learn
--Torchmetrics
--os / sys
--shutil
--itertools
--random
+- h5py
+- Scikit-Learn
+- Torchmetrics
+- os / sys
+- shutil
+- itertools
+- random
 
 ---
 
