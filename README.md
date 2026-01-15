@@ -1,5 +1,3 @@
-# ProgettoCM
-Repositorio per il progetto di computing methods 
 # Generazione di Immagini di Galassie con CVAE 
 
 Progetto universitario che implementa un **Convolutional Varietional Autoencoder (CVAE)** in **PyTorch** per la ricostruzione e generazione di immagini di galassie tramite Deep Learning.
@@ -49,23 +47,31 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 
 ---
 
+## Documentazione
+[Relazione del Progetto](./Relazione/RelazioneprogettoCM.pdf)
+
+---
+
 ## Struttura del Progetto
 
 ```text
 
-├── data/                   # Dataset delle immagini di galassie
+├── Output_images/          # Immagini di output generate dal modello
+├── Plots/                  # Grafici delle curve di loss e metriche
 ├── Project/                # Codice sorgente del progetto
-│   ├── Data_Clipping.py    # Modulo di preprocessing per il ridimensionamento delle immagini
-│   ├── Generate.py         # Script per la generazione di immagini sintetiche
-│   ├── Log.py              # Utility di logging per il salvataggio degli output
+│   ├── Data_Clipping.py    # Preprocessing e ridimensionamento immagini
+│   ├── Generate.py         # Generazione di nuove immagini sintetiche
+│   ├── Log.py              # Utility per il logging degli esperimenti
 │   ├── Loss.py             # Definizione della Loss function
-│   ├── Main.py             # Script per l'esecuzione della Grid Search
-│   ├── Model.py            # Architettura della rete neurale
-│   ├── Plot.py             # Visualizzazione delle metriche e della Loss
-│   ├── Shape.py            # Classe Dataset per il caricamento dati in PyTorch
-│   ├── Train.py            # Implementazione del training loop e della validazione
-│   └── Visualize.py        # Strumenti per la valutazione qualitativa di immagini ricostruite e generate
-├── Plots/                  # Modelli salvati (.h5, .pth)
-├── Output_images/          # Output e immagini generate
-└── README.md
+│   ├── Main.py             # Script principale (Grid Search)
+│   ├── Model.py            # Architettura della rete (ConvVAE)
+│   ├── Plot.py             # Funzioni per la creazione dei grafici
+│   ├── Shape.py            # Dataset loader custom
+│   ├── Train.py            # Loop di training e validazione
+│   └── Visualize.py        # Visualizzazione qualitativa ricostruzioni
+├── Relazione/              # Cartella contente la relazione del progetto
+├── data/                   # Dataset immagini (32x32, 64x64)
+├── README.md               # Documentazione generale
+├── grid_search_convvae.txt # Risultati testuali della Grid Search
+└── pesi_finali.pth         # Pesi salvati del modello addestrato
                
