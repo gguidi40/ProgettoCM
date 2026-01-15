@@ -6,6 +6,9 @@ Progetto universitario che implementa un **Convolutional Varietional Autoencoder
 
 L’obiettivo è apprendere una rappresentazione latente compatta delle immagini astronomiche e utilizzarla per generare nuove immagini simili a quelle del dataset.
 
+Il progetto si basa sul dataset Galaxy10 DECals (https://astronn.readthedocs.io/en/latest/galaxy10.html), che comprende 17.736 immagini 256x256 a colori suddivise in 10 classi morfologiche, tra queste ne sono state scelte tre: Round Smooth, Unbarred Tight Spiral ed Edge-on with Bulge.
+
+
 ---
 
 ##  Descrizione del Progetto
@@ -51,8 +54,18 @@ In questo progetto il modello viene addestrato su un dataset di immagini di gala
 ```text
 
 ├── data/                   # Dataset delle immagini di galassie
-├── Project/               # codice del progetto
-├── Plots/                 # Modelli salvati
-├── Output_imagis/                # Output e immagini generate
+├── Project/                # Codice sorgente del progetto
+│   ├── Data_Clipping.py    # Modulo di preprocessing per il ridimensionamento delle immagini
+│   ├── Generate.py         # Script per la generazione di immagini sintetiche
+│   ├── Log.py              # Utility di logging per il salvataggio degli output
+│   ├── Loss.py             # Definizione della Loss function
+│   ├── Main.py             # Script per l'esecuzione della Grid Search
+│   ├── Model.py            # Architettura della rete neurale
+│   ├── Plot.py             # Visualizzazione delle metriche e della Loss
+│   ├── Shape.py            # Classe Dataset per il caricamento dati in PyTorch
+│   ├── Train.py            # Implementazione del training loop e della validazione
+│   └── Visualize.py        # Strumenti per la valutazione qualitativa di immagini ricostruite e generate
+├── Plots/                  # Modelli salvati (.h5, .pth)
+├── Output_images/          # Output e immagini generate
 └── README.md
                
